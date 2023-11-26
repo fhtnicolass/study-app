@@ -178,7 +178,7 @@ export const Article = () => {
             <InputFormTask
               type='text'
               name='title'
-              placeholder={errorInputs.title ? 'Please enter a value' : 'Title'}
+              placeholder={errorInputs.title ? 'Preencha o campo título' : 'Título'}
               className={
                 errorInputs.title ? 'form__input error-input' : 'form__input'
               }
@@ -203,7 +203,7 @@ export const Article = () => {
               }
               rows='4'
               placeholder={
-                errorInputs.description ? 'Please enter a value' : 'Description'
+                errorInputs.description ? 'Preencha a descrição' : 'Descrição'
               }
               value={inputs.description}
               onChange={handleInputChange}
@@ -211,7 +211,7 @@ export const Article = () => {
           </div>
           <div className='form__btn'>
             <ButtonFormTask type='submit'>
-              {!isEdit ? 'Create' : 'Update'}
+              {!isEdit ? 'Criar tarefa' : 'Atualizar'}
             </ButtonFormTask>
             <ButtonFormTask
               style={!isEdit ? { display: 'none' } : { display: 'block' }}
@@ -219,7 +219,7 @@ export const Article = () => {
               type='button'
               onClick={handleOnClickCancel}
             >
-              Cancel
+              Cancelar
             </ButtonFormTask>
           </div>
         </FormTask>
